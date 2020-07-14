@@ -18,14 +18,6 @@ public class EnemyController : MonoBehaviour
         position.x += direction * speed * Time.deltaTime;
         transform.position = position;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-       if(collision.gameObject.GetComponent<PlayerController>() != null)
-        {
-            PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
-            playerController.killPlayer();
-        }
-    }
     public void ChangeDirection()
     {
         direction = -direction;
