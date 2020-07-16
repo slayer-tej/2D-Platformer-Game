@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("player is killed by Enemy");
         anim.SetBool("isDead", true);
-        this.enabled = false; 
+        this.enabled = false;
     }
 
     private void ReloadLevelCall()

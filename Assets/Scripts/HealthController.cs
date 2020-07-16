@@ -19,7 +19,7 @@ public class HealthController : MonoBehaviour
     private void Update()
     {
         if(health == 2)
-        {
+        { 
             Destroy(Heart3);
         }
         if(health == 1)
