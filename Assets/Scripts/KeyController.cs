@@ -11,7 +11,6 @@ public class KeyController : MonoBehaviour
             PlayerController PlayerController = collision.gameObject.GetComponent<PlayerController>();
             PlayerController.Pickupkey();
             Destroy(gameObject);
-
         }
     }
 }

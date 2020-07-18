@@ -5,12 +5,21 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public PlayerController playerController;
     public float speed;
     private float direction = 1.0f;
+    public int damage;
 
     private void Update()
     {
         EnemyMovement();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<PlayerController>() != null)
+        {
+            playerController.UpdateLives(damage);
+        }
     }
     private void EnemyMovement()
     {

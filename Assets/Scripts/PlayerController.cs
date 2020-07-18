@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
 {
     public ScoreController scoreController;
     public GameOverController gameoverController;
+    public HealthController healthController;
     public Animator anim;
     private BoxCollider2D PlayerCollider;
     private Rigidbody2D rb2d;
     private bool isGrounded;
     public float speed;
     public float jump;
+    public int life;
+
     
     private void Awake()
     {
@@ -21,11 +24,18 @@ public class PlayerController : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    internal void killPlayer()
+
+
+
+    internal void UpdateLives(int h)
     {
-        Debug.Log("player is killed by Enemy");
-        anim.SetBool("isDead", true);
-        this.enabled = false;
+        life -= h;
+        healthController.DisplayHearts(life);
+        if (life <= 0)
+        {
+            anim.SetBool("isDead", true);
+            this.enabled = false;
+        }
     }
 
     private void ReloadLevelCall()
