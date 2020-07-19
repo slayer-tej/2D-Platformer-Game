@@ -372,15 +372,15 @@ GameObject:
   - component: {fileID: 5756305084150168006}
   - component: {fileID: 5756305084150168004}
   - component: {fileID: 5756305084150168007}
-  - component: {fileID: 5756305084150168005}
   - component: {fileID: 5756305084150168002}
+  - component: {fileID: 8390868696075547990}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5756305084150168006
 RectTransform:
   m_ObjectHideFlags: 0
@@ -442,19 +442,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &5756305084150168005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5756305084150168025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a14d5a22d16ab7499d181073b230727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonRestart: {fileID: 5756305082831549330}
 --- !u!114 &5756305084150168002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +482,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8390868696075547990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5756305084150168025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a14d5a22d16ab7499d181073b230727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonRestart: {fileID: 5756305082831549330}
+  buttonHome: {fileID: 5756305084493791542}
 --- !u!1 &5756305084493791499
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +508,6 @@ GameObject:
   - component: {fileID: 5756305084493791540}
   - component: {fileID: 5756305084493791543}
   - component: {fileID: 5756305084493791542}
-  - component: {fileID: 5756305084493791497}
   m_Layer: 5
   m_Name: LobbyButton
   m_TagString: Untagged
@@ -611,19 +611,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5756305084493791497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5756305084493791499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26125e0cd4fd884aa1d9d042347135c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelName: Lobby
 --- !u!1 &5756305084945573556
 GameObject:
   m_ObjectHideFlags: 0

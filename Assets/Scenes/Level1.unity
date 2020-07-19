@@ -2796,18 +2796,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff917a41a49590f4b97eda74ad716b47, type: 3}
---- !u!114 &508291982 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5756305084150168005, guid: 56abf767c77b3354cb6a8ef713f1097f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1294665845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a14d5a22d16ab7499d181073b230727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &602198058
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,6 +4280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 5756305084150168025, guid: 56abf767c77b3354cb6a8ef713f1097f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56abf767c77b3354cb6a8ef713f1097f, type: 3}
 --- !u!4 &1330653132 stripped
@@ -4300,6 +4293,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1166919165}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1350499399 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8390868696075547990, guid: 56abf767c77b3354cb6a8ef713f1097f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1294665845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a14d5a22d16ab7499d181073b230727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355661832
 GameObject:
   m_ObjectHideFlags: 0
@@ -4496,7 +4501,7 @@ PrefabInstance:
     - target: {fileID: 214476542, guid: 179680f71113c4b44839c605b77cb5dd, type: 3}
       propertyPath: gameoverController
       value: 
-      objectReference: {fileID: 508291982}
+      objectReference: {fileID: 1350499399}
     - target: {fileID: 214476542, guid: 179680f71113c4b44839c605b77cb5dd, type: 3}
       propertyPath: healthController
       value: 
