@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165630700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.009022625, z: -15}
+  m_LocalPosition: {x: 0, y: 0.009022625, z: -45}
   m_LocalScale: {x: 0.4520273, y: 0.45113128, z: 0.5451395}
   m_Children: []
   m_Father: {fileID: 7203731082316402199}
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 214476537}
   - component: {fileID: 214476541}
   - component: {fileID: 214476542}
+  - component: {fileID: 684968938585555375}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -154,7 +155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c4d7d6470acd7bf45971042161c6e018, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -245,6 +246,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreController: {fileID: 0}
+  gameoverController: {fileID: 0}
   anim: {fileID: 7773004138966051825}
   speed: 6
-  jump: 55
+  jump: 70
+--- !u!114 &684968938585555375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3226009363653865939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84697ccd5883b374ea8bb76892661fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
