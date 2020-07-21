@@ -14,7 +14,7 @@ GameObject:
   m_Layer: 0
   m_Name: KillZone
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1710785385524770474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.5665245, y: -20.9, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.43, z: -1.1030767}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

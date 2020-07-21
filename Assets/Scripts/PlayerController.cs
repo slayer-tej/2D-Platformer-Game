@@ -24,9 +24,6 @@ public class PlayerController : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
-
-
-
     internal void UpdateLives(int h)
     {
         life -= h;
@@ -34,6 +31,7 @@ public class PlayerController : MonoBehaviour
         if (life <= 0)
         {
             anim.SetBool("isDead", true);
+            SoundManager.Instance.PlayMusic(Sounds.PlayerDeath);
             this.enabled = false;
         }
     }

@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
 {
     private static LevelManager instance;
     public static LevelManager Instance { get { return instance;  } }
-    //public string Level1;
     public string[] Levels;
 
     private void Awake()
@@ -34,9 +33,6 @@ public class LevelManager : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SetLevelStatus(currentScene.name, LevelStatus.Completed);
-        //int nextSceneIndex = currentScene.buildIndex + 1;
-        //Scene nextScene = SceneManager.GetSceneByBuildIndex(nextSceneIndex);
-        //SetLevelStatus(nextScene.name, LevelStatus.Unlocked);
         int currentSceneIndex = Array.FindIndex(Levels, level => level == currentScene.name);
         int nextSceneIndex = currentSceneIndex + 1;
         if(nextSceneIndex < Levels.Length)

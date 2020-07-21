@@ -14,7 +14,10 @@ public class GameOverController : MonoBehaviour
 
     private void LobbyScreen()
     {
+        SoundManager.Instance.Play(Sounds.RestartButtonclick);
         SceneManager.LoadScene(0);
+        SoundManager.Instance.PlayMusic(Sounds.Music);
+
     }
 
     public void PlayerDied()
@@ -24,6 +27,9 @@ public class GameOverController : MonoBehaviour
 
     private void ReloadLevel()
     {
+        SoundManager.Instance.Play(Sounds.RestartButtonclick);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SoundManager.Instance.PlayMusic(Sounds.Music);
+
     }
 }
