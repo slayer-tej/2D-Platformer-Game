@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<PlayerController>() != null)
         {
+            SoundManager.Instance.Play(Sounds.EnemyImpact);
             playerController.UpdateLives(damage);
         }
     }
